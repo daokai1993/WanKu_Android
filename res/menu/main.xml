@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.wanku.MainActivity" >
+
+    <item
+        android:id="@+id/action_exit"
+        android:orderInCategory="99"
+        android:title="@string/action_menu_exit"
+   />
+
+</menu>

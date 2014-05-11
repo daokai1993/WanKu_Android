@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <com.wanku.HorizontalListView.HorizontalListView
+            android:id="@+id/horizontallistview"
+            android:layout_width="match_parent"
+            android:layout_height="400dip" />
+
+        <TextView	
+            android:id="@+id/fullquery_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="400dip" />
+
+        <TextView
+            android:id="@+id/fullquery_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/fullquery_type"
+            android:layout_alignBottom="@+id/fullquery_type"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/fullquery_osreq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/fullquery_size"
+            android:layout_alignBottom="@+id/fullquery_size"
+            android:layout_marginLeft="28dp"
+            android:layout_toRightOf="@+id/fullquery_size" />
+
+        <TextView
+            android:id="@+id/fullquery_ad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/fullquery_version"
+            android:layout_alignBottom="@+id/fullquery_version"
+            android:layout_alignLeft="@+id/fullquery_type" />
+
+        <TextView
+            android:id="@+id/fullquery_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/fullquery_size"
+            android:layout_below="@+id/fullquery_osreq" />
+
+        <TextView
+            android:id="@+id/fullquery_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/fullquery_version"
+            android:layout_alignBottom="@+id/fullquery_version"
+            android:layout_alignLeft="@+id/fullquery_osreq" />
+
+        <TextView
+            android:id="@+id/fullquery_cmt_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fullquery_ad"
+            android:text="评价："
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/fullquery_cmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fullquery_cmt_view"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+</ScrollView>
